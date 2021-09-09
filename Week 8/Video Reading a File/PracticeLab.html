@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Practice Reading Files</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="scripts/practice.js"></script>
+</head>
+
+<body onload="initialize()">
+  <div data-role="page">
+    <div data-role=header>
+      <h1>Reading Files Practice</h1>
+    </div>
+
+    <div data-role="content">
+
+      <!-- FILE INPUT -->
+      <!-- Let users select a file. -->
+      <input type="file" id="file-selector">
+
+      <!-- BUTTON -->
+      <button onclick="compute()">
+        List 'V' Words
+      </button>
+
+      <!-- DISPLAY OUTPUT IN SCROLLING TEXTBOX -->
+      <div style="overflow:scroll; height:200px;">
+        <p id="myDisplay"> </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
