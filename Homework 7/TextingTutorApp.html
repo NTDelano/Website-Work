@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Assignment 7</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!---<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">--->
+    <link rel="stylesheet" href="a7/css/TTA.css">
+    <script src="a7/js/TextingTutor.js"></script>
+
+
+
+  </head>
+
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Texting Tutor App</h1>
+      </div>
+
+      <div data-role="content">
+        <form>
+          <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>Specify your texting level</legend>
+            <input type="radio" name="levelRadio" id="beginner" value="val1" checked="checked" onclick="textLevel(this.id)">
+            <label for="beginner">Beginner</label>
+
+            <input type="radio" name="levelRadio" id="advanced" value="val2" onclick="textLevel(this.id)">
+            <label for="advanced">Advanced</label>
+          </fieldset>
+        </form>
+
+        <input type="button" class="btn" id="startTest" value="Click to start." onclick="generateText()">
+
+        <h3>Once Started, type the text written below:</h3>
+        <p id="outputText"></p>
+
+        <h3>Enter Your Text here:</h3>
+        <input type="text" id="userText" class="answer">
+
+        <input type="button" class="btn" id="endTest" value="Done." onclick="checkText()">
+        <p id="imageResult"></p>
+        <p id="testResult"></p>
+      </div>
+    </div>
+  </body>
+
+</html>
