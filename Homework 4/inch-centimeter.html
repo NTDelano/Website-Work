@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Converter</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="a4/scripts/InchCentimeterScript.js"></script>
+
+  </head>
+
+  <body>
+    <div data-role="page">
+      <div style="padding: 30px;">
+        <div data-role="fieldcontain">
+          <input type="number" id="measurement" name="measurement">
+          <label type="radio" name="units" id="label">Inches</label>
+        </div>
+
+        <fieldset data-role="controlgroup">
+          <legend>Convert to:</legend>
+          <input type="radio" name="units" id="inches" value="inches" onclick="setUnits('Inches')">
+          <label for="inches">Centimeters</label>
+
+          <input type="radio" name="units" id="centimeters" value="centimeters" onclick="setUnits('Centimeters')">
+          <label for="centimeters">Inches</label>
+        </fieldset>
+
+        <input type="button" onclick="Conversion()" value="Convert">
+
+        <p id="answer"></p>
+      </div>
+
+      <br>
+
+    </div>
+  </body>
+
+</html>
