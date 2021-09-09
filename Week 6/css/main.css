@@ -1,0 +1,19 @@
+table {
+  background-color: #444444;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table tr th {
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  color: #B6B6E6;
+}
+
+table tr td {
+  padding: 5px;
+  padding-right: 35px;
+  text-align: right;
+}

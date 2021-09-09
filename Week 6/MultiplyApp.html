@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lab 6 Multiplication Table</title>
+  <script type="text/javascript" src="js/multiplyApp.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel = "stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>Multiplication Table</h1>
+    </div>
+
+    <div data-role="content">
+
+      <!-- DATA INPUT FOR ROWS -->
+      <label for="nTerms"> Terms</label>
+      <input type="range" name="nTerms" id="nTerms" min="0" max="9" placeholder="0">
+
+      <!-- BUTTON -->
+      <button onclick="makeIt();">
+        Create a Multiplication Table
+      </button>
+
+      <!-- Create a Multiplication Table -->
+      <div id="outputTable">
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
