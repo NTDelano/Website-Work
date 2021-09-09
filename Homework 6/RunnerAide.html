@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Runner Aide App</title>
+    <link rel="stylesheet" href="a6/css/RunnerStyle.css">
+    <script src="a6/js/RunnerAide.js"></script>
+
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h1>Runner Aide</h1>
+      </div>
+      <fieldset>
+        <legend>Calculate Pace Chart:</legend>
+        <div class="content">
+
+          <label for="distanceTotal" style="display:block">Distance</label>
+          <label for="distanceTotal">
+            <input type="text" id="distanceTotal"> mi
+          </label> <br>
+
+          <label for="targetPace" style="display:block">Target Pace</label>
+          <label for="targetPace">
+            <input type="text" id="targetPace"> min/mi (mm:ss)
+          </label><br><br>
+
+          <button onclick="calculatePace()"> Calculate </button>
+
+
+
+
+        </div>
+      </fieldset>
+
+      <div class="TableStyle">
+        <div id="paceList"></div>
+      </div>
+
+
+    </div>
+  </body>
+
+</html>

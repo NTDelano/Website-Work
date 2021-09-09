@@ -1,0 +1,22 @@
+table tr {
+  padding-bottom: 20px;
+  text-align: left;
+}
+.content {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+.TableStyle {
+  background-color: lightgreen;
+  border: 2px solid black;
+}
