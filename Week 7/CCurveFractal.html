@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fractal App</title>
+  <script type="text/javascript" src="js/draw_fractal.js"></script>
+  <link rel = "stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="initialize()">
+  <div data-role="page">
+    <div data-role=header>
+      <h1>Fractal Drawing App</h1>
+    </div>
+
+    <div data-role="content">
+
+      <!-- DATA INPUT FOR THE FRACTAL -->
+      <label for="nLevels"> Levels</label>
+      <input type="number" name="nLevels" id="nLevels" min="0" max="14" placeholder="0">
+
+      <!-- BUTTON -->
+      <button onclick="processCcurve();">
+        Draw a C-Curve
+      </button>
+
+      <!-- CREATE A CANVAS -->
+      <canvas id="canvasElement" width="100" height="100"> </canvas>
+    </div>
+  </div>
+</body>
+</html>

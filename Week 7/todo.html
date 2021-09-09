@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>To Do List</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/todo.js"></script>
+</head>
+<body onload="initialize()">
+
+  <div>
+    <div>
+      <h1>My TO-DO App</h1>
+    </div>
+
+    <div>
+      <p>
+        <input id="todoTag" type="text" placeholder="Add a TO-DO Item">
+        <button onclick="saveSearch()"> Save </button>
+        <button onclick="clearAllItems()"> Clear All Items </button>
+      </p>
+
+      <h1>TO-DO Items</h1>
+
+      <div id="searchList"></div>
+    </div>
+  </div>
+
+</body>
+</html>
