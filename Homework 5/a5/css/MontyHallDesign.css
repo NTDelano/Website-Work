@@ -1,0 +1,13 @@
+.span {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+.center {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Puzzle Game - </title>
+  <script type="text/javascript" src="a5/js/montyHallScripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="a5/css/MontyHallDesign.css">
+
+
+</head>
+
+<header>
+  <h1 class="center">Monty Hall Game</h1>
+  <h2 class="center">A car prize is behind one of the doors!</h2>
+</header>
+
+<body>
+
+  <table class="span">
+    <tr>
+      <p id="status"></p>
+      <p id="wonGame"></p>
+      <p id="lostGame"></p>
+    </tr>
+    <tr>
+      <td  class="center">
+        <input type="image" id="door1" src="a5/js/media/door1.png" onclick="doorChosen(0)">
+
+      </td>
+      <td  class="center">
+        <input type="image" id="door2" src="a5/js/media/door2.png" onclick="doorChosen(1)">
+      </td>
+      <td  class="center">
+        <input type="image" id="door3" src="a5/js/media/door3.png" onclick="doorChosen(2)">
+      </td>
+    </tr>
+
+
+  </table>
+  <br><br>
+  <button name="button" onclick="newGame()">Start New Game</button>
+
+  <div>
+    <br>
+    <i>Game by Noah Delano<i>
+  </div>
+</body>
+</html>
